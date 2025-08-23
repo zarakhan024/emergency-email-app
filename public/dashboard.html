@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Emergency Email</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">📧 EmergencyMail</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="emergency-mail.html" id="emergency-link" style="display: none;">📨 Emergency Mail</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="emergency-banner" class="emergency-banner" style="display: none;">
+        <strong>⚠️ EMAIL SERVER DOWN</strong> - Emergency backup mode activated
+        <a href="emergency-mail.html" class="emergency-btn">Access Emergency Email</a>
+    </div>
+
+    <div class="container">
+        <div class="dashboard-header">
+            <h1>Server Monitoring Dashboard</h1>
+            <p id="domain-info">Loading domain info...</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <h3>Primary Server Status</h3>
+                <div class="status-indicator">
+                    <span id="server-status" class="status-dot">CHECKING...</span>
+                    <span id="status-text">Checking server status...</span>
+                </div>
+                <p class="last-check">Last checked: <span id="last-check">Never</span></p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Uptime Statistics</h3>
+                <div class="uptime-display">
+                    <span id="uptime-percentage">--.--%</span>
+                    <p>Current month uptime</p>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Emergency Emails</h3>
+                <div class="email-stats">
+                    <span id="emergency-count">0</span>
+                    <p>Emails sent during outages</p>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Last Outage</h3>
+                <div class="outage-info">
+                    <span id="last-outage">No recent outages</span>
+                    <p>Previous downtime event</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity-log">
+            <h3>Recent Activity</h3>
+            <div id="activity-list" class="activity-list">
+                <p>Loading activity...</p>
+            </div>
+        </div>
+
+        <div class="demo-controls">
+            <h3>Demo Controls</h3>
+            <button id="simulate-outage" class="btn btn-warning">Simulate Server Outage</button>
+            <button id="restore-server" class="btn btn-success">Restore Server</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Domain - Emergency Email</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">📧 EmergencyMail</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="register.html" class="active">Register</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="register-form">
+            <h1>Register Your Domain</h1>
+            <p>Set up emergency email backup for your domain</p>
+
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" placeholder="Your Company Inc." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Contact Email</label>
+                    <input type="email" id="email" placeholder="admin@yourcompany.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="domain">Domain to Protect</label>
+                    <input type="text" id="domain" placeholder="yourcompany.com" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Register Domain</button>
+            </form>
+
+            <div id="registration-status" class="status-message" style="display: none;"></div>
+        </div>
+
+        <div class="setup-steps">
+            <h2>Setup Process</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <h3>Register Your Domain</h3>
+                        <p>Fill out the form to register your domain</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <h3>Verify Domain Ownership</h3>
+                        <p>We'll verify you own the domain (simulated)</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                        <h3>Access Dashboard</h3>
+                        <p>Monitor your email server status</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
