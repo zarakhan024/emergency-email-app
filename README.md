@@ -60,15 +60,7 @@ A demo application that provides emergency email backup services during server o
 - Interactive email interface
 - Activity logging
 
-## College Application Project
-
-This project demonstrates:
-- Full-stack web development skills
-- Real-time application architecture
-- User interface design
-- Problem-solving for business continuity
-- JavaScript programming proficiency
 
 ## Author
 
-[Your Name] - College Application Demo Project 2025
+[Zara khan] 
